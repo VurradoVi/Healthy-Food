@@ -113,7 +113,7 @@ a:hover {
 
 .welcome__btn {
     border: none;
-    box-shadow: 0 0 0 1.50px rgba(220, 120, 11, 0.2); 
+    box-shadow: 0 0 0 1.50px rgba(220, 120, 11, 0.2);
     border-radius: 5px;
     font-weight: 500;
     font-size: 16px;
@@ -273,7 +273,7 @@ a:hover {
 
 .menu {
     padding-top: 115px;
-
+    text-align: center;
 }
 
 .menu__h5 {
@@ -305,7 +305,9 @@ a:hover {
 .menu-items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .container-cards {
@@ -350,8 +352,8 @@ a:hover {
 
 .img__cards-button:hover {
     cursor: pointer;
-    outline: 2px solid #150C01;
-    border-radius: 10px;
+    box-shadow: -1px 1px 10px 1px rgba(218, 59, 59, 0.97);
+    border-radius: 5px;
 
 
 }
@@ -359,18 +361,19 @@ a:hover {
 
 .menu .welcome__btn {
     max-width: 145px;
-    margin: 0 auto;
     padding: 12px 30px;
-    background-repeat: 5px;
+ 
+
 }
 
 
 .app {
-    margin-top: 120px;
+    margin-top: 200px;
     background: #fbf1e7;
 
-    
+
 }
+
 .app .container {
     display: flex;
     justify-content: space-between;
@@ -414,6 +417,7 @@ a:hover {
     gap: 30px;
 }
 
+
 .apple-btn {
     display: flex;
     gap: 10px;
@@ -423,19 +427,26 @@ a:hover {
     background-color: #150C01;
 }
 
-.img-btn {
-
-}
-
 .p-btn {
     font-weight: 500;
     color: #fff;
 }
 
+.apple-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+
+
+}
+
+.img-btn {}
+
+
 .p-btn-android {
     font-weight: 500;
-    color: #150c01;
 }
+
 
 .android-btn {
     display: flex;
@@ -444,6 +455,14 @@ a:hover {
     box-shadow: 0 0 0 1.50px rgba(220, 120, 11, 0.2);
     border-radius: 5px;
     padding: 11px 30px;
+}
+
+.android-btn:hover {
+    cursor: pointer;
+    /* opacity: 0.7; */
+    background-color: #150C01;
+    color: #fff;
+    transition: 0.3s;
 }
 
 .app__img {
@@ -488,12 +507,10 @@ a:hover {
     border-radius: 50%;
     background-size: cover;
     margin-bottom: 40px;
-    
-}
-
-.testimonial__quote {
 
 }
+
+.testimonial__quote {}
 
 .quote__p {
     max-width: 506px;
@@ -503,13 +520,9 @@ a:hover {
 
 }
 
-.star {
+.star {}
 
-}
-
-.img__cards-button {
-
-}
+.img__cards-button {}
 
 .quote__author {
     display: block;
@@ -528,6 +541,7 @@ a:hover {
     background-color: #f6d3d3;
     margin-top: 120px;
 }
+
 .contact__h5 {
     font-weight: 500;
     letter-spacing: 0.2em;
@@ -538,6 +552,7 @@ a:hover {
     padding-top: 115px;
     padding-bottom: 15px;
 }
+
 .contact__h4 {
     font-family: 'Philosopher', sans-serif;
     font-weight: 700;
@@ -549,11 +564,13 @@ a:hover {
     margin: 0 auto;
 
 }
+
 .send-message {
     padding-bottom: 117px;
     margin: 0 auto;
     max-width: 755px;
 }
+
 .message_form {
     border: none;
     outline: none;
@@ -562,6 +579,7 @@ a:hover {
     height: 75px;
     padding: 30px;
 }
+
 .message_button {
     border: none;
     width: 156px;
@@ -580,4 +598,371 @@ a:hover {
 
 }
 
+.message_button:hover {
+    cursor: pointer;
+    background-color: #cda624;
+    transition: 0.3s;
+}
 
+
+.footer {
+    background-color: #252525;
+    padding-top: 137px;
+    padding-bottom: 40px;
+
+}
+
+.footer .container {
+    display: flex;
+    gap: 120px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 185px;
+    color: #fff;
+
+}
+
+.footer__contacts a {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.contacts_img {
+    width: 60px;
+    height: 60px;
+}
+
+.contacts_phone {
+    opacity: 0.7;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 180px;
+}
+
+.footer__nav li {
+    padding-bottom: 20px;
+}
+
+
+
+.footer__list a {
+    color: #fff;
+    opacity: 0.7;
+
+}
+
+.footer__list .nav-bold {
+    font-family: 'Philosopher', sans-serif;
+    ;
+    font-weight: 700;
+    font-size: 18px;
+    opacity: 1;
+
+}
+
+
+.list_flex {
+    display: flex;
+    gap: 10px;
+}
+
+.list_img:hover {
+    cursor: pointer;
+
+}
+
+.footer__list a:hover {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .container {
+        margin: 0 30px;
+    }
+    .app {
+        margin-top: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .footer__nav {
+        gap: 150px;
+    }
+    .about .container {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .welcome__img {
+        width: 450px;
+        height: 470px;
+    }
+    .welcome .container {
+        align-items: center;
+    }
+    .features__flex {
+        justify-content: center;
+        gap: 10px;
+    }
+    .about__img {
+        width: 443px;
+        height: 400px;
+    }
+    .footer__nav {
+        gap: 80px;
+    }
+    .message_form {
+        width: 550px;
+    }
+    .footer .container {
+        gap: 90px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer .container {
+        gap: 40px;
+    }
+    .message_form {
+        width: 550px;
+    }
+    .app__img {
+        width: 280px;
+        height: 550px;
+    }
+    .app .container {
+        gap: 10px;
+    }
+    .about__h4 {
+        font-size: 28px;
+        padding-bottom: 19px;
+    }
+    .about .btn {
+        padding: 10px 28px;
+    }
+    .about__p {
+        padding-bottom: 27px;
+    }
+    .welcome__h2 {
+        font-size: 40px;
+    }
+    .welcome__img {
+        width: 410px;
+        height: 400px;
+    }
+    .main .btn {
+        padding: 15px 30px;
+    }
+    .welcome__btn {
+        padding: 15px 30px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .message_form {
+        width: 530px;
+    }
+    .about__img {
+        width: 400px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about__img {
+        width: 390px;
+        height: 350px;
+    }
+    body {
+        font-size: 14px;
+    }
+    .main .btn {
+        padding: 10px 25px;
+    }
+    .btn {
+        padding: 10px 20px;
+    }
+    .header__list {
+        gap: 26px;
+    }
+    .welcome__p {
+        font-size: 14px;
+    }
+    .welcome__h2 {
+        font-size: 36px;
+    }
+    .welcome .container {
+        max-height: 450px;
+    }
+    .welcome__btn {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .welcome__btn {
+        display: block;
+        margin: 0;
+        max-width: 114px;
+        padding: 10px 16px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .menu .welcome__btn {
+        margin: 0 auto;
+    }
+    .app__h4 {
+        font-size: 29px;
+    }
+    .app__img {
+        width: 250px;
+        height: 500px;
+    }
+
+    .message_button {
+        width: 140px;
+    }
+    .message_form {
+        width: 470px;
+    }
+    .footer .container {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .welcome__img {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.8;
+        top: 200px;
+    }
+    .welcome__p {
+        opacity: 1;
+        padding-bottom: 40px;
+    }
+
+    .header__list {
+        gap: 15px;
+    }
+    .welcome .container {
+        min-height: 300px;
+    }
+
+    .about .container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .about__h5 {
+        text-align: center;
+    }
+
+    .apple-btn {
+        padding: 7px 14px;
+    }
+    .android-btn {
+        padding: 9px 14px;
+    }
+    .img-btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .app__h4 {
+        font-size: 26px;
+    }
+    
+    .app__p {
+        font-size: 14px;
+    }
+    .footer__nav {
+        flex-wrap: wrap;
+    }
+    .message_form {
+        width: 350px;
+    }
+    .message_button {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .welcome__text {
+        text-align: center;
+    }
+    .welcome__btn {
+        
+        margin: 15px auto;
+    }
+    .about-text {
+        text-align: center;
+    }
+    .app__img {
+        width: 200px;
+        height: 350px;
+   
+    }
+    .app__btn {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .android-btn {
+        padding: 9px 12px;
+        max-width: 130px;
+    }
+    .apple-btn {
+        width: 130px;
+    }
+    .app__h5 {
+        padding-top: 8px;
+    }
+   
+    .message_form {
+        max-width: 60%;
+        height: 60px;
+    }
+    .message_button {
+        height: 60px;
+    }
+    .about__img {
+        
+        width: 340px;
+        height: 300px;
+    }
+    .welcome__img {
+        left: -50px;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .app__img {
+        display: none;
+    }
+    .app__btn {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .app__text {
+        text-align: center;
+    }
+    .message_button {
+        left: -10px;
+    }
+}
