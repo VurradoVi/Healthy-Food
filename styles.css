@@ -843,6 +843,7 @@ a:hover {
         z-index: -1;
         opacity: 0.8;
         top: 200px;
+        opacity: 0.5;
     }
     .welcome__p {
         opacity: 1;
@@ -920,7 +921,7 @@ a:hover {
     }
     .app__btn {
         flex-wrap: wrap;
-        gap: 20px;
+        justify-content: space-between;
     }
     .android-btn {
         padding: 9px 12px;
@@ -948,6 +949,7 @@ a:hover {
     .welcome__img {
         left: -50px;
     }
+    
     
 }
 @media screen and (max-width: 450px) {
